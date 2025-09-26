@@ -39,6 +39,7 @@
   },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
+    "format": "<span font='JetBrainsMono Nerd Font' weight='extrabold' style='italic'>{{JR}}</span>",
     "on-click": "omarchy-menu",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
