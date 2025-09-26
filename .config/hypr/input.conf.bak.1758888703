@@ -13,11 +13,11 @@ input {
   numlock_by_default = true
 
   # Increase sensitity for mouse/trackpack (default: 0)
-  sensitivity = -0.3
+  sensitivity = 0.3
 
   touchpad {
     # Use natural (inverse) scrolling
-    # natural_scroll = true
+    natural_scroll = true
 
     # Use two-finger clicks for right-click instead of lower-right corner
     # clickfinger_behavior = true
