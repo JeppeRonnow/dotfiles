@@ -35,6 +35,40 @@ return {
     config = function(_, opts)
       require("dracula").setup(opts)
       vim.cmd.colorscheme("dracula")
+
+      -- Make Telescope and other floating windows transparent
+      local highlights = {
+        -- Telescope
+        TelescopeNormal = { bg = "NONE" },
+        TelescopeBorder = { bg = "NONE" },
+        TelescopePromptNormal = { bg = "NONE" },
+        TelescopePromptBorder = { bg = "NONE" },
+        TelescopePromptTitle = { bg = "NONE" },
+        TelescopePreviewTitle = { bg = "NONE" },
+        TelescopeResultsTitle = { bg = "NONE" },
+        TelescopePreviewBorder = { bg = "NONE" },
+        TelescopeResultsBorder = { bg = "NONE" },
+
+        -- Float and Popup menus
+        NormalFloat = { bg = "NONE" },
+        FloatBorder = { bg = "NONE" },
+        Pmenu = { bg = "NONE" },
+        PmenuSbar = { bg = "NONE" },
+        PmenuThumb = { bg = "NONE" },
+
+        -- WhichKey (if you use it)
+        WhichKeyFloat = { bg = "NONE" },
+
+        -- LSP floating windows
+        LspInfoBorder = { bg = "NONE" },
+
+        -- Notify (if you use nvim-notify)
+        NotifyBackground = { bg = "NONE" },
+      }
+
+      for group, colors in pairs(highlights) do
+        vim.api.nvim_set_hl(0, group, colors)
+      end
     end,
   },
 }
