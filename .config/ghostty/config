@@ -7,7 +7,7 @@ background-opacity = 0.94
 # Font
 font-family = "JetBrainsMono Nerd Font"
 font-style = bold
-font-size = 12
+font-size = 13
 
 # Window
 window-padding-x = 14

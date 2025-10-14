@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 0,
   "height": 34,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["custom/logo","hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
     "group/tray-expander",
@@ -37,16 +37,19 @@
       "5": []
     }
   },
+  "custom/logo": {
+    "format": "<span font='JetBrainsMono Nerd Font' weight='extrabold' style='italic'>JR</span>",
+    "on-click": "wofi --show drun"
+  },
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "$TERMINAL -e btop"
+    "on-click": "ghostty -e btop"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
-    "tooltip": false,
-    "on-click-right": "omarchy-cmd-tzupdate"
+    "tooltip": false
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -59,7 +62,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "setsid uwsm app -- ghostty  -e impala"
+    "on-click": "setsid uwsm app -- ghostty -e impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -74,7 +77,7 @@
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
     "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
     "interval": 5,
-    "on-click": "omarchy-menu power",
+    "on-click": "ghostty -e battop",
     "states": {
       "warning": 20,
       "critical": 10
@@ -82,7 +85,7 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "$TERMINAL --class=Wiremix -e wiremix",
+    "on-click": "ghostty --class=Wiremix -e wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
