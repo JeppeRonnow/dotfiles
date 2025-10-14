@@ -9,6 +9,7 @@
   "modules-right": [
     "group/tray-expander",
     "network",
+    "bluetooth",
     "pulseaudio",
     "cpu",
     "battery"
@@ -39,7 +40,7 @@
   },
   "custom/logo": {
     "format": "<span font='JetBrainsMono Nerd Font' weight='extrabold' style='italic'>JR</span>",
-    "on-click": "wofi --show drun"
+    "on-click": ".config/rofi/launchers/type-6/launcher.sh"
   },
   "cpu": {
     "interval": 5,
@@ -63,6 +64,13 @@
     "interval": 3,
     "spacing": 1,
     "on-click": "setsid uwsm app -- ghostty -e impala"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "blueberry"
   },
   "battery": {
     "format": "{capacity}% {icon}",
