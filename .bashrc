@@ -15,3 +15,4 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ 'theme
 
 export GDK_DARK_MODE=1
+export HYPRSHOT_DIR="$HOME/pictures/screenshots"
