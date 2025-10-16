@@ -1,0 +1,12 @@
+battop-bin
+battop-bin-debug
+hyprmon-bin
+hyprmon-bin-debug
+limine-entry-tool
+pacseek
+pacseek-debug
+pinta
+spotify
+yay
+yay-debug
+zen-browser-bin
