@@ -1,5 +1,5 @@
 # Dynamic theme colors
-config-file = ?"~/.config/ghostty/style.conf"
+config-file = ?"~/.config/themes/current/ghostty.conf"
 
 # Window opacity
 background-opacity = 0.94

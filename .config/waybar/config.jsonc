@@ -41,7 +41,7 @@
   },
   "custom/logo": {
     "format": "<span font='JetBrainsMono Nerd Font' weight='extrabold' style='italic'>JR</span> ",
-    "on-click": ".config/rofi/launchers/type-6/launcher.sh"
+    "on-click": "scripts/rofi_launcher.sh"
   },
   "cpu": {
     "interval": 5,
@@ -71,7 +71,7 @@
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "ghostty -e bluetui"
+    "on-click": "setsid uwsm app -- ghostty -e bluetui"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -86,7 +86,7 @@
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
     "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
     "interval": 5,
-    "on-click": "ghostty -e battop",
+    "on-click": "setsid uwsm app -- ghostty -e battop",
     "states": {
       "warning": 20,
       "critical": 10
@@ -94,7 +94,7 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "ghostty --class=Wiremix -e wiremix",
+    "on-click": "setsid uwsm app -- ghostty --class=Wiremix -e wiremix",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
