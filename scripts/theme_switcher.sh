@@ -35,6 +35,9 @@ fi
 echo "Copying theme '$THEME_NAME' into '$CURRENT_DIR' (overwriting existing files)..."
 cp -rT "$SOURCE_DIR" "$CURRENT_DIR" 2>/dev/null || cp -r "$SOURCE_DIR"/* "$CURRENT_DIR"/
 
-./reload_hyprpaper.sh
+/home/jeppe/scripts/reload_hyprpaper.sh
+/home/jeppe/scripts/reload_swayosd.sh
 
 echo "✅ Theme switched to '$THEME_NAME' successfully!"
+
+exit 0
