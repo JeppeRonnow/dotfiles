@@ -3,7 +3,7 @@ command_timeout = 200
 
 # Show directory (folder) on its own line above the rest
 format = """\
-$directory
+$python$directory
 $git_branch$git_status$character
 """
 
@@ -37,3 +37,10 @@ staged     = ""
 renamed    = ""
 deleted    = ""
 
+[python]
+symbol = " "                    # Python icon (requires Nerd Font)
+style = "bold yellow"
+format = "[$symbol$virtualenv]($style) "
+detect_extensions = []
+detect_files = []
+detect_folders = []
