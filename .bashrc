@@ -20,5 +20,17 @@ alias theme_selecter='$HOME/dotfiles/scripts/theme_selecter.sh'
 
 PS1='[\u@\h \W]\$ 'theme
 
+# darktheme
 export GDK_DARK_MODE=1
+
+# GTK Theme
+export GTK_THEME=Arc-Dark
+
+# Qt Theme
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Cursor
+export XCURSOR_THEME=Adwaita
+export XCURSOR_SIZE=24
+
 export HYPRSHOT_DIR="$HOME/pictures/screenshots"
