@@ -37,6 +37,7 @@ cp -rT "$SOURCE_DIR" "$CURRENT_DIR" 2>/dev/null || cp -r "$SOURCE_DIR"/* "$CURRE
 
 /home/jeppe/scripts/reload_hyprpaper.sh
 /home/jeppe/scripts/reload_swayosd.sh
+/home/jeppe/scripts/reload_mako.sh
 
 echo "✅ Theme switched to '$THEME_NAME' successfully!"
 
