@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+SCRIPT="$HOME/scripts/theme_switcher.sh"
+
+"$SCRIPT" osaka-jade
