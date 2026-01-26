@@ -1,4 +1,4 @@
-@import url("../themes/current/waybar.css");
+@import url("waybar.css");
 
 * {
     background-color: @background;
@@ -13,12 +13,27 @@
 }
 
 .modules-left {
-    margin-left: 8px;
+    padding: 4px 10px;
+    margin: 3 10px;
+    background-color: #1b1c1d;
+    border-radius: 50px;
+
 }
 
 .modules-right {
-    margin-right: 8px;
+    padding: 4px 10px;
+    margin: 3 10px;
+    background-color: #1b1c1d;
+    border-radius: 50px;
 }
+
+.modules-center {
+    padding: 0px 10px;
+    margin: 3 0px;
+    background-color: #1b1c1d;
+    border-radius: 50px;
+}
+
 
 #workspaces button {
     all: initial;
@@ -60,6 +75,3 @@ tooltip {
 .hidden {
     opacity: 0;
 }
-
-
-@import url("../themes/current/waybar_layout.css");

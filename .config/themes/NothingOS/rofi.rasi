@@ -21,7 +21,7 @@ configuration {
 
 /*****----- Jinger Theme -----*****/
 * {
-    font:                        "JetBrains Mono Nerd Font Bold 12";
+    font:                        "NType82-Headline";
     background:                  #1b1c1d;   /* NothingOS primary dark */
     background-alt:              #303038;   /* NothingOS secondary dark */
     foreground:                  #f1f0f6;   /* NothingOS light text */
@@ -60,7 +60,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/.config/themes/Jinger-theme/img/rofi1.png", height);
+    background-image:            url("~/.config/themes/NothingOS/img/4.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
