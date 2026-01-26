@@ -71,9 +71,10 @@
     },
   },
   "custom/headset": {
-    "exec": "~/.config/waybar/headset_battery.sh",
+    "exec": "~/.config/waybar/test.sh",
+    "on-click": "ghostty -e headsetcontrol -b",
     "return-type": "json",
-    "interval": 60,
+    "interval": 2,
     "format": "󰋎 {text}%",
     "tooltip": true,
     "exec-if": "true",
