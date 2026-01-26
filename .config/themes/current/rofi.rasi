@@ -22,12 +22,12 @@ configuration {
 /*****----- Jinger Theme -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font Bold 12";
-    background:                  #121212;   /* dark background */
-    background-alt:              #1a1a1a;   /* secondary background */
-    foreground:                  #f8f8f2;   /* light text */
-    selected:                    #ff6600;   /* neon orange highlight */
-    active:                      #3db85f;   /* green accent */
-    urgent:                      #fc3c3f;   /* red accent */
+    background:                  #1b1c1d;   /* NothingOS primary dark */
+    background-alt:              #303038;   /* NothingOS secondary dark */
+    foreground:                  #f1f0f6;   /* NothingOS light text */
+    selected:                    #e2201f;   /* NothingOS red accent */
+    active:                      #e2201f;   /* NothingOS red (was green) */
+    urgent:                      #e2201f;   /* NothingOS red (was red) */
 }
 
 /*****----- Main Window -----*****/

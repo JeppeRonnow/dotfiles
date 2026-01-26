@@ -1,8 +1,8 @@
-@define-color background-color #121212;
-@define-color border-color #ff6600;
-@define-color label #f8f8f2;
-@define-color image #f8f8f2;
-@define-color progress #3db85f;
+@define-color background-color #1b1c1d;    /* Primary dark (was #121212) */
+@define-color border-color #e2201f;        /* Red accent (was #ff6600 orange) */
+@define-color label #f1f0f6;               /* Light text (was #f8f8f2) */
+@define-color image #f1f0f6;               /* Light text (was #f8f8f2) */
+@define-color progress #e2201f;            /* Red accent (was #3db85f green) */
 
 window {
     border-radius: 0;
