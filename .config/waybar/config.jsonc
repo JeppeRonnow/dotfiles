@@ -1,9 +1,9 @@
-{
+[{
   "reload_style_on_change": true,
   "layer": "top",
   "position": "top",
   "spacing": 0,
-  "height": 34,
+  "height": 40,
   "modules-left": ["custom/logo", "hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["custom/headset", "network", "pulseaudio", "cpu"],
@@ -42,7 +42,7 @@
     "on-click": "ghostty -e btop",
   },
   "clock": {
-    "format": "{:L%A %H:%M}",
+    "format": "{:L%A <span font='Ndot77JPExtended'>%H:%M</span>} ",
     "format-alt": "{:L%d %B W%V %Y}",
     "tooltip": false,
   },
@@ -79,4 +79,29 @@
     "tooltip": true,
     "exec-if": "true",
   },
-}
+}/*
+,{
+  "reload_style_on_change": true,
+
+  "layer": "overlay",
+  "position": "bottom",
+  "height": 40,
+
+  "exclusive": false,
+  "passthrough": false,
+
+  "auto-hide": true,
+  "hide-delay": 0,
+  "hide-duration": 200,
+  "modules-center": ["wlr/taskbar"],
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 24,
+    "spacing": 10,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["Ghostty", "waybar"],
+  }
+}*/
+]

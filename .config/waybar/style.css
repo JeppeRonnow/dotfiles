@@ -1,7 +1,7 @@
 @import url("../themes/current/waybar.css");
 
 * {
-    background-color: @background;
+    background-color: transparent;
     color: @foreground;
 
     border: none;
@@ -13,11 +13,25 @@
 }
 
 .modules-left {
-    margin-left: 8px;
+    padding: 4px 10px;
+    margin: 5px 0 0 10px;
+    background-color: @background;
+    border-radius: 50px;
+
 }
 
 .modules-right {
-    margin-right: 8px;
+    padding: 4px 10px;
+    margin: 5px 10px 0 0;
+    background-color: @background;
+    border-radius: 50px;
+}
+
+.modules-center {
+    padding: 0px 10px;
+    margin: 5px 0 0 0;
+    background-color: @background;
+    border-radius: 50px;
 }
 
 #workspaces button {
@@ -47,6 +61,8 @@
 
 tooltip {
     padding: 2px;
+    background-color: @background;
+    border-radius: 10px;
 }
 
 #custom-update {
