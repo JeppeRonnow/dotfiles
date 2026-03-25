@@ -1,0 +1,13 @@
+[Security]
+EAP-Method=PEAP
+EAP-Identity=anonymous@sdu.dk
+EAP-PEAP-Phase2-Method=MSCHAPV2
+EAP-PEAP-Phase2-Identity=YOUR_USERNAME@sdu.dk
+EAP-PEAP-Phase2-Password=YOUR_PASSWORD
+
+[Settings]
+AutoConnect=true
+
+# Server certificate validation
+EAP-TLS-CACert=/etc/ssl/certs/sdu-radius-ca.pem
+EAP-TLS-ServerDomainMask=adm01.aaa.sdu.dk

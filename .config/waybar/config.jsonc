@@ -6,7 +6,7 @@
   "height": 40,
   "modules-left": ["custom/logo", "hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/headset", "network", "pulseaudio", "cpu"],
+  "modules-right": ["network", "pulseaudio", "cpu", "bluetooth", "battery"],
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -78,6 +78,32 @@
     "format": "󰋎 {text}%",
     "tooltip": true,
     "exec-if": "true",
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "setsid uwsm app -- ghostty -e bluetui"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{icon}<span font='Ndot77JPExtended'>{capacity}</span>%",
+    "format-charging": "{icon}<span font='Ndot77JPExtended'> {capacity}</span>%",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "on-click": "setsid uwsm app -- ghostty -e battop",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
   },
 }/*
 ,{
