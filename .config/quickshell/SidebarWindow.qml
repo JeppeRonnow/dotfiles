@@ -179,7 +179,7 @@ PanelWindow {
             anchors.margins: 20
             spacing: 20
 
-            // --- TOP BAR (Screenshot & Color Picker) ---
+            // --- TOP BAR (Screenshot, Clipboard & Color Picker) ---
             RowLayout {
                 Layout.fillWidth: true
                 spacing: 10
@@ -197,6 +197,14 @@ PanelWindow {
                     onClicked: {
                         root.isOpen = false
                         Quickshell.execDetached(["hyprshot", "-m", "region"])
+                    }
+                }
+
+                ActionIcon {
+                    iconTxt: ""
+                    onClicked: {
+                        root.isOpen = false
+                        Quickshell.execDetached(["quickshell", "ipc", "call", "clipboard", "open"])
                     }
                 }
 
@@ -336,7 +344,8 @@ PanelWindow {
                             id: playerCard
                             property var player: modelData
 
-                            width: mprisListView.width - 16
+                            width: mprisListView.width - 4
+                            x: mprisListView.width - width
                             implicitHeight: 100
                             
                             radius: 10

@@ -6,7 +6,7 @@
   "height": 40,
   "modules-left": ["custom/logo", "hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/headset", "network", "pulseaudio", "cpu"],
+  "modules-right": [/*"custom/headset",*/ "custom/expand-icon", "network", "pulseaudio", "cpu", "custom/power"],
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -40,6 +40,16 @@
     "interval": 5,
     "format": "󰍛",
     "on-click": "ghostty -e btop",
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "qs ipc call power toggle",
+    "tooltip": false,
+  },
+  "custom/expand-icon": {
+    "format": "",
+    "on-click": "quickshell ipc call sidebar toggle",
+    "tooltip": false,
   },
   "clock": {
     "format": "{:L%A <span font='Ndot77JPExtended'>%H:%M</span>} ",
