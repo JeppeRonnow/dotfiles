@@ -1,6 +1,8 @@
 import Quickshell
 import "PowerApp"
+import "SidebarApp"
 
 ShellRoot {
-    PowerWindow {}
+  PowerWindow {}
+  SidebarWindow {}
 }
